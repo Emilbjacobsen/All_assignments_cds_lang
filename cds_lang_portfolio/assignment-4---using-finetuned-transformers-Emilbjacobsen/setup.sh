@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+#making virtual environment
+python3 -m venv assignment4_lang_env
+
+source ./assignment4_lang_env/bin/activate
+
+# install hdbscan for BERTopic
+sudo apt-get update
+sudo apt-get install python3-dev
+
+# requirements
+pip install --upgrade pip
+pip install --upgrade nbformat
+python3 -m pip install -r requirements.txt
+
